@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<title>mydr 健康助手</title>
+<title>mydr 健康助手</title><link rel="icon" href="icon.svg"><link rel="shortcut icon" href="icon.svg">
 <link rel="manifest" href="manifest.json">
-<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{font-size:18px}
@@ -62,29 +62,30 @@ input:focus{border-color:#3b82f6}
 </style>
 </head>
 <body>
-<div class="hdr"><div class="chip-bar" id="chipBar"><span class="chip chip-add" id="btnAddP">+ 添加</span></div></div>
-<div class="toast" id="toast"></div>
+<div class="hdr"><div class="chip-bar" id="cb"><span class="chip chip-add" id="ba">+ 添加</span></div></div>
+<div class="toast" id="tt"></div>
 <div id="main"></div>
-<div class="bar"><button class="b secondary" id="btnImport">📋 粘贴</button><button class="b secondary" id="btnExport">📄 导出</button><button class="b primary" id="btnCopyP">📝 问询模板</button></div>
+<div class="bar"><button class="b secondary" id="bi">📋 粘贴</button><button class="b secondary" id="be">📄 导出</button><button class="b primary" id="bc">📝 问询模板</button></div>
 
-<div class="modal-overlay" id="modalName">
-<div class="modal"><button class="modal-close" id="modalNameClose">&times;</button>
+<div class="modal-overlay" id="mn">
+<div class="modal"><button class="modal-close" id="mnc">&times;</button>
 <div class="modal-title">➕ 添加患者</div>
-<input id="inputName" type="text" placeholder="输入患者姓名...">
+<input id="in" type="text" placeholder="输入患者姓名...">
 <div style="display:flex;gap:6px">
-<button class="parse-btn" id="btnNameCancel" style="background:#e2e8f0;color:#475569;flex:1;font-size:15px">取消</button>
-<button class="parse-btn" id="btnNameConfirm" style="flex:2">✔ 确定</button>
+<button class="parse-btn" id="bnc" style="background:#e2e8f0;color:#475569;flex:1;font-size:15px">取消</button>
+<button class="parse-btn" id="bnf" style="flex:2">✔ 确定</button>
 </div></div></div>
 
-<div class="modal-overlay" id="modalImport">
-<div class="modal"><button class="modal-close" id="modalClose">&times;</button>
+<div class="modal-overlay" id="mi">
+<div class="modal"><button class="modal-close" id="mic">&times;</button>
 <div class="modal-title">📋 粘贴 DeepSeek 回复</div>
 <div class="guide">① 点下方"📝问询模板"→ 复制 → 去 DeepSeek 粘贴发送<br>② DeepSeek 回复后 → 长按 → 复制全部<br>③ 回到本页 → 粘贴到下方 → 点"解析"</div>
-<textarea id="inputText" placeholder="长按 DeepSeek 回复，选择「复制」，然后回到这里粘贴..."></textarea>
-<button id="btnParse" class="parse-btn">📥 解析数据</button>
+<textarea id="it" placeholder="长按 DeepSeek 回复，选择「复制」，然后回到这里粘贴..."></textarea>
+<button id="bp" class="parse-btn">📥 解析数据</button>
 </div></div>
 
 <script src="app.js"></script>
 </body>
 </html>
+
 
