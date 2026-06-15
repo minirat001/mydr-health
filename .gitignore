@@ -1,0 +1,8 @@
+# Temp files
+temp_check.js
+*.py
+*.ps1
+*.log
+node_modules/
+.DS_Store
+Thumbs.db
